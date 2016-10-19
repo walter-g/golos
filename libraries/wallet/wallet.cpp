@@ -1041,6 +1041,15 @@ string wallet_api::get_wallet_filename() const
 }
 
 
+string wallet_api::get_golos_per_mvests() const
+{
+   auto dynamic_props = my->_remote_db->get_dynamic_global_properties();
+   auto price = ( dynamic_props.total_vesting_fund_steem / dynamic_props.total_vesting_shares );
+   std::stringstream ss;
+   ss << price.to_real()*1000000;
+   return ss.str();
+}
+
 extended_account wallet_api::get_account( string account_name ) const
 {
    return my->get_account( account_name );

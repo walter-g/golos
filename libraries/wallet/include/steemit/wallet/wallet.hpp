@@ -197,6 +197,11 @@ class wallet_api
        */
       dynamic_global_property_object    get_dynamic_global_properties() const;
 
+      /**
+       *  Gets the golos price per mvests
+       */
+      string                            get_golos_per_mvests() const;
+
       /** Returns information about the given account.
        *
        * @param account_name the name of the account to provide information about
@@ -970,6 +975,7 @@ FC_API( steemit::wallet::wallet_api,
         (list_accounts)
         (list_witnesses)
         (get_witness)
+        (get_golos_per_mvests)
         (get_account)
         (get_block)
         (get_feed_history)
