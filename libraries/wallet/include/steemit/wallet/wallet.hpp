@@ -189,6 +189,11 @@ class wallet_api
        */
       set<string>  list_accounts(const string& lowerbound, uint32_t limit);
 
+      /**
+       *  Gets the number of accounts registered in blockchain
+       */
+      string                            get_account_count() const;
+
       /** Returns the block chain's rapidly-changing properties.
        * The returned object contains information that changes every block interval
        * such as the head block number, the next witness, etc.
@@ -968,6 +973,7 @@ FC_API( steemit::wallet::wallet_api,
         (info)
         (list_my_accounts)
         (list_accounts)
+        (get_account_count)
         (list_witnesses)
         (get_witness)
         (get_account)

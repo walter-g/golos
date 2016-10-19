@@ -993,6 +993,14 @@ set<string> wallet_api::list_accounts(const string& lowerbound, uint32_t limit)
    return my->_remote_db->lookup_accounts(lowerbound, limit);
 }
 
+string wallet_api::get_account_count()const
+{
+   auto account_count = my->_remote_db->get_account_count();
+   std::ostringstream ss;
+   ss << account_count;
+   return ss.str();
+}
+
 vector<string> wallet_api::get_miner_queue()const {
    return my->_remote_db->get_miner_queue();
 }
