@@ -33,9 +33,9 @@
 #define STEEMIT_OWNER_AUTH_HISTORY_TRACKING_START_BLOCK_NUM 1
 #else // IS LIVE STEEM NETWORK
 
-// 5JRFWJ17qjzexhikbXQ1BepnjmDTQrvNePBoJM8YRVbgvqpNX9a
-#define STEEMIT_INIT_PUBLIC_KEY_STR             "GLS5Dh9otpsCvbMn7g4yMqLw6aMKiMf7ZYSKeMenfAG3d6MuCKYEX"
-#define BLOCKCHAIN_NAME                         "GOLOSTESTNETPR4"
+// 5JP9oBy8hibC2SjfCEnbVNHA2SmVp4FoZyxTgpnhpZZaemLLBPR
+#define STEEMIT_INIT_PUBLIC_KEY_STR             "GLS6wZ5T75MX3ubHYMXZvrr9MVszxWVfnajPab2X1JkMPRSrHCm5B"
+#define BLOCKCHAIN_NAME                         "FOUNDATIONTESTNET"
 #define STEEMIT_CHAIN_ID                        (fc::sha256::hash(BLOCKCHAIN_NAME))
 
 #define VESTS_SYMBOL  (uint64_t(6) | (uint64_t('G') << 8) | (uint64_t('E') << 16) | (uint64_t('S') << 24) | (uint64_t('T') << 32) | (uint64_t('S') << 40)) ///< GESTS with 6 digits of precision
@@ -66,7 +66,7 @@
 #define STEEMIT_START_MINER_VOTING_BLOCK        (60*10/STEEMIT_BLOCK_INTERVAL)
 #define STEEMIT_FIRST_CASHOUT_TIME              (fc::time_point_sec(1480902624))
 
-#define STEEMIT_INIT_MINER_NAME                 "cyberfounder_testnet"
+#define STEEMIT_INIT_MINER_NAME                 "foundation"
 #define STEEMIT_NUM_INIT_MINERS                 1
 #define STEEMIT_MAX_VOTED_WITNESSES             2
 #define STEEMIT_MAX_MINER_WITNESSES             1
