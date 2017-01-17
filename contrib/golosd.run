@@ -2,11 +2,11 @@
 
 export HOME="/var/lib/golosd"
 
-STEEMD="/usr/local/golosd-default/bin/golosd"
+STEEMD="/usr/local/bin/golosd"
 
-if [[ "$USE_WAY_TOO_MUCH_RAM" ]]; then
-    STEEMD="/usr/local/golosd-full/bin/golosd"
-fi
+#if [[ "$USE_WAY_TOO_MUCH_RAM" ]]; then
+#    STEEMD="/usr/local/golosd-full/bin/golosd"
+#fi
 
 chown -R golosd:golosd $HOME
 
